@@ -1,0 +1,59 @@
+/* ── Reset ─────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── CSS Variables ─────────────────────────────────────────────── */
+:root {
+  --color-bg:          #071e28;
+  --color-sidebar-bg:  #04141c;
+  --color-sidebar-border: rgba(22, 179, 168, 0.12);
+  --color-navy:        #0B2D39;
+  --color-teal:        #0F6E7A;
+  --color-aqua:        #16B3A8;
+  --color-aqua-light:  #BFE7E3;
+  --color-text-dim:    rgba(191, 231, 227, 0.4);
+  --color-text-muted:  rgba(191, 231, 227, 0.65);
+  --color-text-bright: #EFFFFD;
+
+  --sidebar-width: 256px;
+  --topbar-height: 48px;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+/* ── Base ──────────────────────────────────────────────────────── */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text-bright);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Scrollbar styling ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(22, 179, 168, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(22, 179, 168, 0.4);
+}

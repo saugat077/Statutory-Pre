@@ -1,0 +1,179 @@
+/* ── Viewer shell ───────────────────────────────────────────────── */
+.viewer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+/* ── Top bar ────────────────────────────────────────────────────── */
+.viewer__topbar {
+  height: var(--topbar-height);
+  min-height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 24px;
+  background: rgba(4, 20, 28, 0.85);
+  border-bottom: 1px solid rgba(22, 179, 168, 0.1);
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.viewer__topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.viewer__topbar-icon {
+  color: var(--color-aqua);
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.viewer__topbar-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-aqua-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.viewer__topbar-sub {
+  font-size: 11px;
+  color: var(--color-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Topbar right ───────────────────────────────────────────────── */
+.viewer__topbar-counter {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.viewer__topbar-counter span {
+  color: rgba(191, 231, 227, 0.2);
+  margin: 0 3px;
+}
+
+/* ── Scrollable content area ────────────────────────────────────── */
+.viewer__scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 24px 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(22, 179, 168, 0.15) transparent;
+}
+
+/* ── Stage: sized to the scaled slide ───────────────────────────── */
+.viewer__stage {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ── The actual 1280×720 slide frame ───────────────────────────── */
+.viewer__slide-wrap {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(22, 179, 168, 0.12);
+}
+
+/* ── Bottom navigation footer ───────────────────────────────────── */
+.viewer__footer {
+  height: 52px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: rgba(4, 20, 28, 0.7);
+  border-top: 1px solid rgba(22, 179, 168, 0.08);
+  flex-shrink: 0;
+}
+
+/* ── Prev / Next buttons ────────────────────────────────────────── */
+.viewer__nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  background: rgba(15, 110, 122, 0.22);
+  border: 1px solid rgba(22, 179, 168, 0.22);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  min-width: 100px;
+  justify-content: center;
+}
+
+.viewer__nav-btn:hover:not(:disabled) {
+  background: rgba(15, 110, 122, 0.45);
+  border-color: var(--color-aqua);
+  color: var(--color-text-bright);
+}
+
+.viewer__nav-btn:disabled {
+  opacity: 0.22;
+  cursor: not-allowed;
+}
+
+.viewer__nav-btn--next {
+  flex-direction: row-reverse;
+}
+
+/* ── Dot row ────────────────────────────────────────────────────── */
+.viewer__dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.viewer__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 179, 168, 0.3);
+  background: rgba(191, 231, 227, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.viewer__dot:hover {
+  background: rgba(22, 179, 168, 0.4);
+}
+
+.viewer__dot--active {
+  background: var(--color-aqua);
+  border-color: var(--color-aqua);
+  transform: scale(1.4);
+  box-shadow: 0 0 8px rgba(22, 179, 168, 0.55);
+}
