@@ -1,5 +1,5 @@
 import { PageProps } from '../types';
-import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag } from '../shared';
+import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag, NextPageLink } from '../shared';
 
 const flowSteps = [
   {
@@ -24,7 +24,7 @@ const flowSteps = [
   },
 ];
 
-export function ShPP(_: PageProps) {
+export function ShPP({ onNavigate }: PageProps) {
   return (
     <>
       <div className="page-title">
@@ -249,6 +249,7 @@ export function ShPP(_: PageProps) {
           ['Small Employer (SER)', '≤ £45,000/year', <strong>103% of ShPP paid to their own employee</strong>],
         ]}
       />
+      <NextPageLink to="spbp" onNavigate={onNavigate} />
     </>
   );
 }

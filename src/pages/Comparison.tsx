@@ -1,7 +1,7 @@
 import { PageProps } from '../types';
-import { Notice, DataTable, Tag } from '../shared';
+import { Notice, DataTable, Tag, NextPageLink } from '../shared';
 
-export function Comparison(_: PageProps) {
+export function Comparison({ onNavigate }: PageProps) {
   return (
     <>
       <div className="page-title">Comparison Table</div>
@@ -175,6 +175,7 @@ export function Comparison(_: PageProps) {
         SSP now has neither a minimum earnings threshold nor waiting days, making it the most
         accessible statutory payment — but it is the only one employers cannot reclaim from HMRC.
       </Notice>
+      <NextPageLink to="glossary" onNavigate={onNavigate} />
     </>
   );
 }

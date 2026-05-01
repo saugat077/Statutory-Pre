@@ -1,7 +1,7 @@
 import { PageProps } from '../types';
-import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag } from '../shared';
+import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag, NextPageLink } from '../shared';
 
-export function SNCP(_: PageProps) {
+export function SNCP({ onNavigate }: PageProps) {
   return (
     <>
       <div className="page-title">
@@ -190,6 +190,7 @@ export function SNCP(_: PageProps) {
           ['Small Employer (SER)', '≤ £45,000/year', <strong>103%</strong>, '£800.60'],
         ]}
       />
+      <NextPageLink to="ssp" onNavigate={onNavigate} />
     </>
   );
 }

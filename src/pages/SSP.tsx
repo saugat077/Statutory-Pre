@@ -1,7 +1,7 @@
 import { PageProps } from '../types';
-import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag } from '../shared';
+import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag, NextPageLink } from '../shared';
 
-export function SSP(_: PageProps) {
+export function SSP({ onNavigate }: PageProps) {
   return (
     <>
       <div className="page-title">
@@ -245,6 +245,7 @@ export function SSP(_: PageProps) {
           ['28 weeks SSP exhausted',  'Employer issues Form SSP1 within 7 days'],
         ]}
       />
+      <NextPageLink to="compare" onNavigate={onNavigate} />
     </>
   );
 }

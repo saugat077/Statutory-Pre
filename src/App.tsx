@@ -6,6 +6,7 @@ import { pages } from './pages';
 
 export default function App() {
   const [active, setActive] = useState<SectionId>('overview');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
   const handleNavigate = (id: SectionId) => {
@@ -21,7 +22,14 @@ export default function App() {
   return (
     <>
       <Header />
-      <Sidebar active={active} onNavigate={handleNavigate} />
+      <button
+        className={`sidebar-toggle${sidebarOpen ? ' sidebar-toggle--open' : ''}`}
+        onClick={() => setSidebarOpen(o => !o)}
+        aria-label="Toggle navigation"
+      >
+        <span /><span /><span />
+      </button>
+      <Sidebar active={active} onNavigate={handleNavigate} isOpen={sidebarOpen} />
       <div className="app-content" ref={contentRef}>
         <div className="page">
           <ActivePage onNavigate={handleNavigate} />

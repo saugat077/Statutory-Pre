@@ -3,11 +3,12 @@ import { NAV_ITEMS, SectionId } from '../types';
 interface SidebarProps {
   active: SectionId;
   onNavigate: (id: SectionId) => void;
+  isOpen: boolean;
 }
 
-export function Sidebar({ active, onNavigate }: SidebarProps) {
+export function Sidebar({ active, onNavigate, isOpen }: SidebarProps) {
   return (
-    <aside className="app-sidebar">
+    <aside className={`app-sidebar${isOpen ? ' app-sidebar--open' : ''}`}>
       <nav>
         {NAV_ITEMS.map(item => (
           <button
