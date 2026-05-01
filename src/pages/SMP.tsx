@@ -17,14 +17,7 @@ export function SMP({ onNavigate }: PageProps) {
       <p>
         SMP is paid by the employer to eligible pregnant employees when they take maternity
         leave. It covers up to <strong>39 weeks</strong> of the maternity leave period. The
-        remaining 13 weeks of the full 52-week maternity leave entitlement are unpaid —
-        employees may use accrued holiday or contractual enhanced pay, but there is no further
-        statutory payment.
-      </p>
-      <p>
-        Employers pay SMP through payroll alongside normal wages, then reclaim the cost from
-        HMRC (92% or 103% for small employers). The employee does not need to repay SMP if
-        they decide not to return to work.
+        remaining 13 weeks of the full 52-week maternity leave entitlement are unpaid.
       </p>
 
       {/* ── 2. Key Definitions ───────────────────────── */}
@@ -32,12 +25,18 @@ export function SMP({ onNavigate }: PageProps) {
       <DataTable
         headers={['Term', 'Full Name', 'What It Means']}
         rows={[
-          [<strong>EWC</strong>, 'Expected Week of Childbirth', 'The week — starting on a Sunday — in which the baby is due. Confirmed on the MAT B1 certificate.'],
+          [<strong>EWC</strong>, 'Expected Week of Childbirth', 'The week starting on a Sunday in which the baby is due. Confirmed on the MAT B1 certificate.'],
           [<strong>QW</strong>,  'Qualifying Week',             'The 15th week before the EWC. This is the critical date: the employee must have been continuously employed for 26 weeks by the end of this week.'],
           [<strong>AWE</strong>, 'Average Weekly Earnings',     'The employee\'s average gross weekly pay, calculated over the 8-week Relevant Period ending with the last complete Saturday before the QW.'],
+          [<strong>RP</strong>, 'Relevant Period',             'The 8-week window used to calculate AWE, ending with the last complete Saturday before the QW.'],
           [<strong>LEL</strong>, 'Lower Earnings Limit',        '£125/week for 2026/27. The employee\'s AWE must be at or above this figure to qualify.'],
           [<strong>MAT B1</strong>, 'Maternity Certificate',    'A certificate issued by a GP or midwife, available from 20 weeks before the EDD, confirming the EWC. Employers may request this as evidence.'],
         ]}
+      />
+      <img
+        src="/images/SMP_timeline.png"
+        alt="SMP timeline diagram"
+        style={{ width: '100%', marginTop: '24px', borderRadius: '6px' }}
       />
 
       {/* ── 3. Qualifying Conditions ─────────────────── */}
