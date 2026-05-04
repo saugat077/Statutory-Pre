@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PageProps } from '../types';
-import { Notice, DataTable, Tag, NextPageLink } from '../shared';
+import { Notice, DataTable, Checklist, Tag, NextPageLink } from '../shared';
 
 export function SMP({ onNavigate }: PageProps) {
   const [showSolution, setShowSolution]             = useState(false);
@@ -40,8 +40,21 @@ export function SMP({ onNavigate }: PageProps) {
         ]}
       />
 
-      {/* ── 3. The Relevant Period ───────────────────── */}
-      <h2>3. The Relevant Period</h2>
+      {/* ── 3. Qualifying Conditions ─────────────────── */}
+      <h2>3. Qualifying Conditions</h2>
+      <Checklist
+        items={[
+          'Must be an employee (not a worker or self-employed person)',
+          <>At least <strong>26 weeks' continuous employment</strong> by the end of the Qualifying Week</>,
+          <>AWE at or above the <strong>Lower Earnings Limit (£125/week)</strong> for 2026/27</>,
+          <>Still pregnant at the <strong>11th week before EWC</strong>, or has already given birth</>,
+          <>Must give the employer at least <strong>28 days' notice</strong> of the intended start date for SMP</>,
+          <>Must provide a <strong>MATB1 certificate</strong>, obtainable from a GP or midwife from 20 weeks before the due date</>,
+        ]}
+      />
+
+      {/* ── 4. The Relevant Period ───────────────────── */}
+      <h2>4. The Relevant Period</h2>
       <p>
         The Relevant Period is the <strong>8-week window</strong> used to calculate AWE. It
         runs from the last complete Saturday before the start of the Qualifying Week, counting
@@ -49,7 +62,7 @@ export function SMP({ onNavigate }: PageProps) {
       </p>
       <Notice variant="info" title="ℹ How AWE is calculated">
         Step 1: Identify the last complete Saturday before the QW.<br />
-        Step 2: Count back 8 weeks — this is your Relevant Period.<br />
+        Step 2: Count back 8 weeks; this is your Relevant Period.<br />
         Step 3: Add up all gross earnings paid in that period.<br />
         Step 4: Divide by 8 to get the AWE.<br />
         <br />
@@ -63,8 +76,8 @@ export function SMP({ onNavigate }: PageProps) {
         style={{ width: '100%', marginTop: '24px', borderRadius: '6px' }}
       />
 
-      {/* ── 4. The Entitlement ───────────────────────── */}
-      <h2>4. The Entitlement</h2>
+      {/* ── 5. The Entitlement ───────────────────────── */}
+      <h2>5. The Entitlement</h2>
       <DataTable
         headers={['Period', 'Rate']}
         rows={[
@@ -74,8 +87,8 @@ export function SMP({ onNavigate }: PageProps) {
         ]}
       />
 
-      {/* ── 5. Worked Calculation ────────────────────── */}
-      <h2>5. Worked Calculation</h2>
+      {/* ── 6. Worked Calculation ────────────────────── */}
+      <h2>6. Worked Calculation</h2>
       <p style={{ color: 'var(--grey3)' }}>
         Sarah earns an annual salary of{' '}
         <strong style={{ color: 'var(--black)' }}>£50,000</strong>. She is a monthly payroll
@@ -122,16 +135,16 @@ export function SMP({ onNavigate }: PageProps) {
             </tr>
             <tr>
               <td>Rate check (weeks 7–39)</td>
-              <td>£865.38 &gt; £194.32 — flat rate applies</td>
+              <td>£865.38 &gt; £194.32, flat rate applies</td>
               <td>£194.32/week</td>
             </tr>
             <tr>
-              <td>SMP — Weeks 1–6</td>
+              <td>SMP: Weeks 1–6</td>
               <td>6 × £865.38</td>
               <td>£5,192.31</td>
             </tr>
             <tr>
-              <td>SMP — Weeks 7–39</td>
+              <td>SMP: Weeks 7–39</td>
               <td>33 × £194.32</td>
               <td>£6,412.56</td>
             </tr>
@@ -145,7 +158,7 @@ export function SMP({ onNavigate }: PageProps) {
       )}
 
       {/* ── Assignment: Alabaster Payment ────────────── */}
-      <h2>Assignment — Alabaster Payment</h2>
+      <h2>Assignment: Alabaster Payment</h2>
       <div className="assignment-card">
         <div className="assignment-card__title">Alabaster Payment</div>
         <p>

@@ -55,9 +55,9 @@ export function SAP({ onNavigate }: PageProps) {
           [<strong>Matching Date</strong>,         'The date the adoption agency formally matches the child to the adopter. This is the reference point for calculating the Relevant Period and qualifying conditions.'],
           [<strong>Placement Date</strong>,        'The date the child is physically placed into the adopter\'s home. SAP can start from this date or up to 14 days before the expected Placement Date.'],
           [<strong>Official Notification</strong>, 'For overseas adoptions, the date the adopter receives official confirmation (approval from the relevant UK authority to adopt from abroad). This replaces the Matching Date as the reference point.'],
-          [<strong>AWE</strong>,                   'Average Weekly Earnings — calculated over the 8 weeks ending with the week of the Matching Date (or Official Notification for overseas adoptions).'],
-          [<strong>Primary Adopter</strong>,       'The person in a couple who is designated to claim SAP. Only one person per placement can claim SAP. Either partner can take this role — HMRC does not restrict by gender.'],
-          [<strong>Secondary Adopter</strong>,     'The other person in a couple — they claim SPP (1–2 weeks) instead of SAP. May extend this through ShPP if the primary adopter curtails SAP early.'],
+          [<strong>AWE</strong>,                   'Average Weekly Earnings, calculated over the 8 weeks ending with the week of the Matching Date (or Official Notification for overseas adoptions).'],
+          [<strong>Primary Adopter</strong>,       'The person in a couple who is designated to claim SAP. Only one person per placement can claim SAP. Either partner can take this role; HMRC does not restrict by gender.'],
+          [<strong>Secondary Adopter</strong>,     'The other person in a couple; they claim SPP (1–2 weeks) instead of SAP. May extend this through ShPP if the primary adopter curtails SAP early.'],
         ]}
       />
 
@@ -84,7 +84,7 @@ export function SAP({ onNavigate }: PageProps) {
           ['Reference event',  'Expected Week of Childbirth (EWC)', 'Matching Date'],
           ['Qualifying week',  '15th week before the EWC',          'Week of matching notification'],
           ['Evidence required','MATB1 certificate from GP/midwife', 'Matching certificate from adoption agency'],
-          ['Who can claim',    'Person who gave birth only',        'Either partner — no gender restriction'],
+          ['Who can claim',    'Person who gave birth only',        'Either partner, no gender restriction'],
         ]}
       />
 
@@ -133,10 +133,10 @@ export function SAP({ onNavigate }: PageProps) {
       </Notice>
 
       {/* ── 9. Worked Calculation ────────────────────── */}
-      <h2>9. Worked Calculation — Sarah Thompson (Primary Adopter)</h2>
+      <h2>9. Worked Calculation: Sarah Thompson (Primary Adopter)</h2>
 
       <div className="persona-box">
-        <div className="persona-box__name">Sarah Thompson — primary adopter</div>
+        <div className="persona-box__name">Sarah Thompson, primary adopter</div>
         <p>Monthly salary: <strong>£5,000</strong> · Continuously employed: <strong>3 years</strong></p>
         <p>Matching Date: <strong>1 June 2026</strong> · Placement Date: <strong>15 June 2026</strong></p>
         <p>
@@ -178,12 +178,12 @@ export function SAP({ onNavigate }: PageProps) {
             <td>£194.32/week</td>
           </tr>
           <tr>
-            <td>SAP — Weeks 1–6</td>
+            <td>SAP: Weeks 1–6</td>
             <td>6 × £1,038.46</td>
             <td>£6,230.76</td>
           </tr>
           <tr>
-            <td>SAP — Weeks 7–39</td>
+            <td>SAP: Weeks 7–39</td>
             <td>33 × £194.32</td>
             <td>£6,412.56</td>
           </tr>
@@ -201,7 +201,7 @@ export function SAP({ onNavigate }: PageProps) {
       </p>
 
 
-      <Notice variant="info" title="ℹ Identical to SMP — by design">
+      <Notice variant="info" title="ℹ Identical to SMP, by design">
         SAP and SMP use the same rates and the same 39-week structure. For the same employee
         the total SAP figure will always equal the total SMP figure. The legislative intention
         is to give adoptive parents the same level of income support as birth parents.

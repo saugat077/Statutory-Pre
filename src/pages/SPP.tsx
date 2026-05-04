@@ -27,8 +27,22 @@ export function SPP({ onNavigate }: PageProps) {
       </p>
 
 
-      {/* ── 2. The Entitlement ───────────────────────── */}
-      <h2>2. The Entitlement</h2>
+      {/* ── 2. Qualifying Conditions ─────────────────── */}
+      <h2>2. Qualifying Conditions</h2>
+      <Checklist
+        items={[
+          'Must be an employee (not a worker or self-employed person)',
+          <>At least <strong>26 weeks' continuous employment</strong> by the end of the Qualifying Week (the 15th week before EWC, or the week of the matching notification for adoptions)</>,
+          <>AWE at or above the <strong>Lower Earnings Limit (£125/week)</strong></>,
+          <>Must be the <strong>biological father</strong>, the mother's <strong>partner</strong>, or the second parent in a joint adoption</>,
+          <>Must have, or expect to have, <strong>main responsibility</strong> for the child's upbringing alongside the mother or primary adopter</>,
+          <>Must give at least <strong>28 days' notice</strong> before each block of paternity leave taken</>,
+          <>Cannot receive SPP at the same time as <strong>SMP, SAP, or ShPP</strong></>,
+        ]}
+      />
+
+      {/* ── 3. The Entitlement ───────────────────────── */}
+      <h2>3. The Entitlement</h2>
 
       <RateGrid>
         <RateCard
@@ -58,8 +72,8 @@ export function SPP({ onNavigate }: PageProps) {
         before each separate block.
       </Notice>
 
-      {/* ── 3. Worked Calculation ────────────────────── */}
-      <h2>3. Worked Calculation</h2>
+      {/* ── 4. Worked Calculation ────────────────────── */}
+      <h2>4. Worked Calculation</h2>
 
       <div className="persona-box">
         <div className="persona-box__name">Saugat KC</div>
@@ -95,7 +109,7 @@ export function SPP({ onNavigate }: PageProps) {
             <td>£194.32/week</td>
           </tr>
           <tr>
-            <td>SPP — 2 weeks</td>
+            <td>SPP: 2 weeks</td>
             <td>2 × £194.32</td>
             <td>£388.64</td>
           </tr>

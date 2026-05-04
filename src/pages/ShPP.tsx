@@ -66,10 +66,10 @@ export function ShPP({ onNavigate }: PageProps) {
         headers={['Term', 'What It Means']}
         rows={[
           [<strong>Curtailment Notice</strong>,  "A written notice from the mother/adopter to their employer, formally ending their SMP or SAP before the full 39 weeks are used. This is what 'creates' the ShPP entitlement."],
-          [<strong>Binding Period</strong>,       'Once a Curtailment Notice is submitted, it becomes binding and generally cannot be revoked — with very limited exceptions (e.g. partner loses entitlement through death or relationship breakdown).'],
+          [<strong>Binding Period</strong>,       'Once a Curtailment Notice is submitted, it becomes binding and generally cannot be revoked, with very limited exceptions (e.g. partner loses entitlement through death or relationship breakdown).'],
           [<strong>Opt-In Notice</strong>,        "A notice each parent submits to their own employer, setting out how much ShPP they intend to take and on what dates. Both parents must do this independently."],
-          [<strong>SPLIT Days</strong>,           'Shared Parental Leave In Touch days — up to 20 days each parent can work during ShPP without losing that week\'s payment. Like KIT days for SMP but 20 instead of 10.'],
-          [<strong>Discontinuous Blocks</strong>, 'Requesting ShPP leave in separate, non-consecutive periods — e.g. 4 weeks on, 2 weeks back at work, 4 weeks on. Employers can refuse discontinuous requests (but not continuous ones).'],
+          [<strong>SPLIT Days</strong>,           'Shared Parental Leave In Touch days; up to 20 days each parent can work during ShPP without losing that week\'s payment. Like KIT days for SMP but 20 instead of 10.'],
+          [<strong>Discontinuous Blocks</strong>, 'Requesting ShPP leave in separate, non-consecutive periods, e.g. 4 weeks on, 2 weeks back at work, 4 weeks on. Employers can refuse discontinuous requests (but not continuous ones).'],
         ]}
       />
 
@@ -88,7 +88,7 @@ export function ShPP({ onNavigate }: PageProps) {
           ['Maximum shared pay',              '37 weeks (39 total − 2 compulsory maternity weeks)'],
           ['Rate per parent',                 'Lower of £194.32/week OR 90% of that parent\'s own AWE'],
           ['Blocks allowed',                  'Up to 3 separate blocks per parent'],
-          ['Simultaneous leave',              'Allowed — both parents can take ShPP at the same time, each paid by their own employer'],
+          ['Simultaneous leave',              'Allowed; both parents can take ShPP at the same time, each paid by their own employer'],
           ['SPLIT days per parent',           'Up to 20 days each without losing the week\'s ShPP'],
         ]}
       />
@@ -103,13 +103,13 @@ export function ShPP({ onNavigate }: PageProps) {
         <RateCard
           label="Weekly Rate"
           value={<>£194.32<span className="rate-card__unit">/wk</span></>}
-          sub="Or 90% AWE if lower — assessed per parent"
+          sub="Or 90% AWE if lower, assessed per parent"
           accent="#4c2c92"
         />
         <RateCard
           label="SPLIT Days"
           value="20 days"
-          sub="Per parent — work without losing pay"
+          sub="Per parent, work without losing pay"
           accent="#4c2c92"
         />
       </RateGrid>
@@ -118,7 +118,7 @@ export function ShPP({ onNavigate }: PageProps) {
       <h2>6. Worked Calculation</h2>
 
       <div className="persona-box">
-        <div className="persona-box__name">Sarah Thompson — curtails SMP after 10 weeks</div>
+        <div className="persona-box__name">Sarah Thompson, curtails SMP after 10 weeks</div>
         <p>AWE: <strong>£1,153.85/week</strong> · Flat rate applies: <strong>£194.32/week</strong></p>
         <p>
           Sarah's partner also works full-time. Both independently qualify. Sarah curtails her
@@ -175,7 +175,7 @@ export function ShPP({ onNavigate }: PageProps) {
       </Notice>
 
       {/* ── 7. Discontinuous Blocks ──────────────────── */}
-      <h2>7. Discontinuous Blocks — What This Means</h2>
+      <h2>7. Discontinuous Blocks: What This Means</h2>
       <p>
         Instead of taking all ShPP leave in one continuous block, parents can request leave
         in <strong>separate periods separated by time back at work</strong>. For example:
@@ -185,7 +185,7 @@ export function ShPP({ onNavigate }: PageProps) {
         rows={[
           ['Weeks 1–4',   'ShPP (4 weeks)',       'Working'],
           ['Weeks 5–6',   'Back at work',         'Working'],
-          ['Weeks 7–12',  'ShPP (6 weeks)',       'ShPP (6 weeks) — simultaneously'],
+          ['Weeks 7–12',  'ShPP (6 weeks)',       'ShPP (6 weeks), simultaneously'],
           ['Weeks 13–14', 'Working',              'ShPP (final 2 weeks)'],
         ]}
       />

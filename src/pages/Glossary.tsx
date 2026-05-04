@@ -3,11 +3,11 @@ import { PageProps } from '../types';
 const terms: { term: string; definition: string }[] = [
   {
     term: 'AAL — Additional Adoption Leave',
-    definition: 'The second 26-week block of adoption leave, taken immediately after Ordinary Adoption Leave (OAL). The employee has a right to return to the same or a suitable alternative job. SAP is not paid during AAL — pay only covers the first 39 weeks.',
+    definition: 'The second 26-week block of adoption leave, taken immediately after Ordinary Adoption Leave (OAL). The employee has a right to return to the same or a suitable alternative job. SAP is not paid during AAL; pay only covers the first 39 weeks.',
   },
   {
     term: 'AML — Additional Maternity Leave',
-    definition: 'The second 26-week block of maternity leave, taken after OML. The employee has the right to return to the same or a suitable alternative job (slightly weaker return right than OML). SMP does not extend into AML — it covers only the first 39 weeks.',
+    definition: 'The second 26-week block of maternity leave, taken after OML. The employee has the right to return to the same or a suitable alternative job (slightly weaker return right than OML). SMP does not extend into AML; it covers only the first 39 weeks.',
   },
   {
     term: 'AWE — Average Weekly Earnings',
@@ -15,11 +15,11 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'Binding Period',
-    definition: 'Once the mother or primary adopter submits a Curtailment Notice, it is legally binding — they generally cannot take it back. The only exceptions are very specific situations, such as the partner dying or the couple\'s relationship breaking down before the partner\'s ShPP has started. Employers should treat a Curtailment Notice as final once submitted.',
+    definition: 'Once the mother or primary adopter submits a Curtailment Notice, it is legally binding; they generally cannot take it back. The only exceptions are very specific situations, such as the partner dying or the couple\'s relationship breaking down before the partner\'s ShPP has started. Employers should treat a Curtailment Notice as final once submitted.',
   },
   {
     term: 'Curtailment Notice',
-    definition: 'A written notice from the mother or primary adopter to their employer, formally cutting short their SMP or SAP before the full entitlement is used. This is what "creates" the ShPP pot — without a Curtailment Notice, there is nothing to share. Once submitted it becomes binding (see Binding Period).',
+    definition: 'A written notice from the mother or primary adopter to their employer, formally cutting short their SMP or SAP before the full entitlement is used. This is what "creates" the ShPP pot; without a Curtailment Notice, there is nothing to share. Once submitted it becomes binding (see Binding Period).',
   },
   {
     term: 'EDD — Expected Date of Delivery',
@@ -27,15 +27,15 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'Employment Rights Act 2025',
-    definition: 'The legislation that introduced the most significant SSP reforms in over 40 years, effective 6 April 2026. Three key changes: (1) waiting days were abolished — SSP is now payable from the first qualifying day of sickness; (2) the Lower Earnings Limit was removed as an SSP condition — all employees qualify regardless of pay; (3) a new 80% of AWE rule was introduced to protect lower-paid employees. The same Act also extended rights in other areas of employment law.',
+    definition: 'The legislation that introduced the most significant SSP reforms in over 40 years, effective 6 April 2026. Three key changes: (1) waiting days were abolished; SSP is now payable from the first qualifying day of sickness; (2) the Lower Earnings Limit was removed as an SSP condition; all employees qualify regardless of pay; (3) a new 80% of AWE rule was introduced to protect lower-paid employees. The same Act also extended rights in other areas of employment law.',
   },
   {
     term: 'ESA — Employment and Support Allowance',
-    definition: 'A DWP benefit for people who are unable to work due to illness or disability. When SSP is exhausted (28 weeks used), the employer must issue Form SSP1 — the employee can then claim "New Style ESA" from DWP. For most new claimants Universal Credit has replaced traditional ESA, but New Style ESA remains available separately.',
+    definition: 'A DWP benefit for people who are unable to work due to illness or disability. When SSP is exhausted (28 weeks used), the employer must issue Form SSP1; the employee can then claim "New Style ESA" from DWP. For most new claimants Universal Credit has replaced traditional ESA, but New Style ESA remains available separately.',
   },
   {
     term: 'EWC — Expected Week of Childbirth',
-    definition: 'The week — running Sunday to Saturday — in which the baby is expected to be born. Most SMP and SPP calculations are anchored to this week. The Qualifying Week (QW), for example, is the 15th week before the EWC. If a baby arrives early or late, the EWC does not change — it is based on the expected date, not the actual birth date.',
+    definition: 'The week (running Sunday to Saturday) in which the baby is expected to be born. Most SMP and SPP calculations are anchored to this week. The Qualifying Week (QW), for example, is the 15th week before the EWC. If a baby arrives early or late, the EWC does not change; it is based on the expected date, not the actual birth date.',
   },
   {
     term: 'Jack\'s Law',
@@ -43,11 +43,11 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'KIT Day — Keeping In Touch Day',
-    definition: 'A day an employee on maternity or adoption leave can work for their employer without losing statutory pay for that week. Up to 10 KIT days are available during the whole leave period. Even one hour of work on any given day counts as a full KIT day. Both the employer and employee must agree to KIT days — neither can insist.',
+    definition: 'A day an employee on maternity or adoption leave can work for their employer without losing statutory pay for that week. Up to 10 KIT days are available during the whole leave period. Even one hour of work on any given day counts as a full KIT day. Both the employer and employee must agree to KIT days; neither can insist.',
   },
   {
     term: 'LEL — Lower Earnings Limit',
-    definition: 'The minimum average weekly pay an employee must earn to qualify for family-related statutory payments (SMP, SPP, SAP, ShPP, SPBP, SNCP). Set at £125/week for 2026/27. Important exception: from 6 April 2026, the LEL was removed as an SSP qualifying condition — all employees can now receive SSP regardless of how much they earn.',
+    definition: 'The minimum average weekly pay an employee must earn to qualify for family-related statutory payments (SMP, SPP, SAP, ShPP, SPBP, SNCP). Set at £125/week for 2026/27. Important exception: from 6 April 2026, the LEL was removed as an SSP qualifying condition; all employees can now receive SSP regardless of how much they earn.',
   },
   {
     term: 'MATB1 — Maternity Certificate',
@@ -67,11 +67,11 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'OML — Ordinary Maternity Leave',
-    definition: 'The first 26-week block of maternity leave. The employee has the strongest right to return — back to exactly the same job on the same terms and conditions. This right is slightly weaker during Additional Maternity Leave.',
+    definition: 'The first 26-week block of maternity leave. The employee has the strongest right to return, back to exactly the same job on the same terms and conditions. This right is slightly weaker during Additional Maternity Leave.',
   },
   {
     term: 'PIW — Period of Incapacity for Work',
-    definition: 'The block of sickness time that triggers SSP. From 6 April 2026: a PIW starts from the very first qualifying day of sickness — previously, 4 or more consecutive calendar days were needed. Two separate PIWs separated by 8 weeks or fewer automatically link together and count as one continuous PIW. This matters because the 28-week SSP maximum runs across all linked PIWs, not just the current absence.',
+    definition: 'The block of sickness time that triggers SSP. From 6 April 2026: a PIW starts from the very first qualifying day of sickness; previously, 4 or more consecutive calendar days were needed. Two separate PIWs separated by 8 weeks or fewer automatically link together and count as one continuous PIW. This matters because the 28-week SSP maximum runs across all linked PIWs, not just the current absence.',
   },
   {
     term: 'Placement Date',
@@ -79,11 +79,11 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'QD — Qualifying Day',
-    definition: 'For SSP: the days of the week on which the employee is contracted to work. SSP is only paid for qualifying days — not rest days or non-contracted days. If an employee works Monday to Friday, their 5 qualifying days are Mon–Fri. The daily SSP rate is calculated by dividing the weekly rate by the number of qualifying days in that week.',
+    definition: 'For SSP: the days of the week on which the employee is contracted to work. SSP is only paid for qualifying days, not rest days or non-contracted days. If an employee works Monday to Friday, their 5 qualifying days are Mon–Fri. The daily SSP rate is calculated by dividing the weekly rate by the number of qualifying days in that week.',
   },
   {
     term: 'QW — Qualifying Week',
-    definition: 'The 15th week before the Expected Week of Childbirth. To qualify for SMP or SPP, an employee must have completed 26 weeks\' continuous service by the end of this week. It is assessed at the end of Saturday of the Qualifying Week — not at the point when leave starts. If an employee misses this threshold by even one day, they cannot claim SMP (though they may be able to claim Maternity Allowance from DWP instead).',
+    definition: 'The 15th week before the Expected Week of Childbirth. To qualify for SMP or SPP, an employee must have completed 26 weeks\' continuous service by the end of this week. It is assessed at the end of Saturday of the Qualifying Week, not at the point when leave starts. If an employee misses this threshold by even one day, they cannot claim SMP (though they may be able to claim Maternity Allowance from DWP instead).',
   },
   {
     term: 'SAP — Statutory Adoption Pay',
@@ -91,7 +91,7 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'SC2 — Self-Certification',
-    definition: 'A form (or an employer\'s own equivalent) completed by the employee themselves to certify that they were ill. Required for absences of up to 7 calendar days. No GP or medical professional is involved — the employee\'s own declaration is sufficient.',
+    definition: 'A form (or an employer\'s own equivalent) completed by the employee themselves to certify that they were ill. Required for absences of up to 7 calendar days. No GP or medical professional is involved; the employee\'s own declaration is sufficient.',
   },
   {
     term: 'SC3 — Paternity Pay Declaration',
@@ -99,11 +99,11 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'SER — Small Employer Relief',
-    definition: 'An enhanced HMRC reclaim rate available to smaller employers. Standard employers can reclaim 92% of statutory payments made (except SSP which cannot be reclaimed). Employers whose total employer Class 1 NIC bill in the previous tax year was £45,000 or less can reclaim 103% — the extra 3% offsets the employer NIC due on the statutory payments.',
+    definition: 'An enhanced HMRC reclaim rate available to smaller employers. Standard employers can reclaim 92% of statutory payments made (except SSP which cannot be reclaimed). Employers whose total employer Class 1 NIC bill in the previous tax year was £45,000 or less can reclaim 103%; the extra 3% offsets the employer NIC due on the statutory payments.',
   },
   {
     term: 'ShPL — Shared Parental Leave (also referred to as Shared Maternity/Parental Leave)',
-    definition: 'Leave that a mother or primary adopter creates by formally ending their own maternity or adoption leave early (curtailment). The remaining leave can then be shared between both parents in flexible blocks. Up to 50 weeks of leave are available to share (52 total minus 2 compulsory maternity weeks). Both parents must actively opt in — nothing happens automatically.',
+    definition: 'Leave that a mother or primary adopter creates by formally ending their own maternity or adoption leave early (curtailment). The remaining leave can then be shared between both parents in flexible blocks. Up to 50 weeks of leave are available to share (52 total minus 2 compulsory maternity weeks). Both parents must actively opt in; nothing happens automatically.',
   },
   {
     term: 'ShPP — Statutory Shared Parental Pay',
@@ -111,7 +111,7 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'SML — Statutory Maternity Leave',
-    definition: 'The full 52-week leave entitlement (OML + AML). All employees are entitled to SML from the very first day of employment — there is no minimum service requirement for the leave itself. The pay element (SMP) requires 26 weeks\' service.',
+    definition: 'The full 52-week leave entitlement (OML + AML). All employees are entitled to SML from the very first day of employment; there is no minimum service requirement for the leave itself. The pay element (SMP) requires 26 weeks\' service.',
   },
   {
     term: 'SMP — Statutory Maternity Pay',
@@ -119,7 +119,7 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'SNCP — Statutory Neonatal Care Pay',
-    definition: 'Introduced 6 April 2025 under the Neonatal Care (Leave and Pay) Act 2023. Additional paid leave for parents of babies requiring neonatal care — it stacks on top of any other statutory leave and pay the parent is already receiving. Up to 12 weeks per parent (not shared). Rate: £194.32/week or 90% of AWE, whichever is lower (2026/27). Only applies to babies born on or after 6 April 2025.',
+    definition: 'Introduced 6 April 2025 under the Neonatal Care (Leave and Pay) Act 2023. Additional paid leave for parents of babies requiring neonatal care; it stacks on top of any other statutory leave and pay the parent is already receiving. Up to 12 weeks per parent (not shared). Rate: £194.32/week or 90% of AWE, whichever is lower (2026/27). Only applies to babies born on or after 6 April 2025.',
   },
   {
     term: 'SPBP — Statutory Parental Bereavement Pay',
@@ -127,7 +127,7 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'SPLIT Day — Shared Parental Leave In Touch Day',
-    definition: 'The ShPL equivalent of a KIT day. A day when a parent on Shared Parental Leave can work without losing that week\'s ShPP. Each parent gets up to 20 SPLIT days — twice as many as the 10 KIT days available during maternity/adoption leave. Must be agreed between both the employee and employer.',
+    definition: 'The ShPL equivalent of a KIT day. A day when a parent on Shared Parental Leave can work without losing that week\'s ShPP. Each parent gets up to 20 SPLIT days, twice as many as the 10 KIT days available during maternity/adoption leave. Must be agreed between both the employee and employer.',
   },
   {
     term: 'SPP — Statutory Paternity Pay',
@@ -135,7 +135,7 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'SSP — Statutory Sick Pay',
-    definition: 'Pay for employees who are too ill to work. From 6 April 2026: payable from the first qualifying day of sickness (waiting days abolished); no earnings threshold (LEL removed); rate is £123.25/week or 80% of AWE, whichever is lower. Maximum 28 weeks per linked PIW. Unlike every other statutory payment, SSP cannot be reclaimed from HMRC by most employers — the employer bears the full cost.',
+    definition: 'Pay for employees who are too ill to work. From 6 April 2026: payable from the first qualifying day of sickness (waiting days abolished); no earnings threshold (LEL removed); rate is £123.25/week or 80% of AWE, whichever is lower. Maximum 28 weeks per linked PIW. Unlike every other statutory payment, SSP cannot be reclaimed from HMRC by most employers; the employer bears the full cost.',
   },
   {
     term: 'SSP1 — SSP End / Refusal Form',
@@ -152,7 +152,7 @@ export function Glossary(_: PageProps) {
     <>
       <div className="page-title">Glossary</div>
       <div className="page-subtitle">
-        Key terms and abbreviations — plain English definitions for payroll students and practitioners
+        Key terms and abbreviations, plain English definitions for payroll students and practitioners
       </div>
 
       <p>

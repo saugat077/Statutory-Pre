@@ -9,13 +9,13 @@ export function SNCP({ onNavigate }: PageProps) {
         Statutory Neonatal Care Pay
       </div>
       <div className="page-subtitle">
-        Neonatal Care (Leave and Pay) Act 2023 — in force 6 April 2025
+        Neonatal Care (Leave and Pay) Act 2023, in force 6 April 2025
       </div>
 
       <div className="callout">
         <div className="callout__title">⚡ What Makes SNCP Unique</div>
         <p>
-          SNCP <strong>stacks on top of other statutory leave</strong> — it does not replace
+          SNCP <strong>stacks on top of other statutory leave</strong>; it does not replace
           or reduce any existing entitlement. A mother receiving SMP can{' '}
           <strong>also receive SNCP at the same time</strong> if her baby qualifies for
           neonatal care. Think of it as an extra layer of protection added to the existing
@@ -29,12 +29,12 @@ export function SNCP({ onNavigate }: PageProps) {
         SNCP is the <strong>most recently introduced</strong> statutory payment in the UK,
         brought in from <strong>6 April 2025</strong> under the Neonatal Care (Leave and Pay)
         Act 2023. Before this law, parents whose babies required neonatal care had no specific
-        statutory entitlement — they had to use their maternity or paternity leave while their
+        statutory entitlement; they had to use their maternity or paternity leave while their
         baby was still in hospital, leaving little or no leave for when the baby finally came home.
       </p>
       <p>
         SNCP provides <strong>additional</strong> paid leave and pay to parents of babies who
-        require neonatal care shortly after birth. The key word is additional — it sits on top
+        require neonatal care shortly after birth. The key word is additional; it sits on top
         of whatever other statutory leave the parent is already entitled to.
       </p>
 
@@ -50,21 +50,21 @@ export function SNCP({ onNavigate }: PageProps) {
         rows={[
           [<strong>Neonatal Care</strong>,           'Medical care received in a hospital or similar neonatal unit by a baby aged 28 days old or younger at the time care begins.'],
           [<strong>Qualifying Period of Care</strong>,'The baby must have received neonatal care for at least 7 consecutive days to trigger any SNCP entitlement. Care lasting 6 days or fewer does not qualify.'],
-          [<strong>Tier 1 Leave</strong>,            'Leave taken during or immediately after the period of neonatal care — while the situation is ongoing. Shorter notice requirements apply.'],
-          [<strong>Tier 2 Leave</strong>,            'Leave taken later — any time within 68 weeks of the baby\'s birth date, after neonatal care has ended. Requires 28 days\' notice.'],
+          [<strong>Tier 1 Leave</strong>,            'Leave taken during or immediately after the period of neonatal care, while the situation is ongoing. Shorter notice requirements apply.'],
+          [<strong>Tier 2 Leave</strong>,            'Leave taken later, any time within 68 weeks of the baby\'s birth date, after neonatal care has ended. Requires 28 days\' notice.'],
         ]}
       />
 
       {/* ── 3. Qualifying Conditions ─────────────────── */}
       <h2>3. Qualifying Conditions</h2>
-      <p>Two sets of conditions must be met — one for the parent, one for the baby:</p>
+      <p>Two sets of conditions must be met, one for the parent and one for the baby:</p>
 
       <h3>The Parent</h3>
       <Checklist
         items={[
           'Must be an employee (not a worker or self-employed)',
           '26 weeks\' continuous employment by the week the baby is born',
-          <>AWE at or above the <strong>Lower Earnings Limit (£125/week)</strong></>,
+          <>AWE at or above the <strong>Lower Earnings Limit (£129/week)</strong></>,
           'Must be a qualifying parent: biological parent, partner, adoptive parent, or intended parent in a surrogacy arrangement',
           'Notice given as soon as reasonably practicable (Tier 1), or 28 days in advance (Tier 2)',
         ]}
@@ -97,7 +97,7 @@ export function SNCP({ onNavigate }: PageProps) {
           ['35 – 41 days',   '5 weeks'],
           ['42 – 48 days',   '6 weeks'],
           ['Each further 7 days', '+1 week'],
-          [<strong>56+ days (8 weeks or more)</strong>, <strong>Maximum: 12 weeks</strong>],
+          [<strong>84+ days (12 weeks or more)</strong>, <strong>Maximum: 12 weeks</strong>],
         ]}
       />
 
@@ -105,7 +105,7 @@ export function SNCP({ onNavigate }: PageProps) {
         <RateCard
           label="Max per parent"
           value="12 weeks"
-          sub="Each parent has their own entitlement — not a shared pot"
+          sub="Each parent has their own entitlement, not a shared pot"
           accent="#d4351c"
         />
         <RateCard
@@ -125,20 +125,20 @@ export function SNCP({ onNavigate }: PageProps) {
       <Notice variant="ok" title="✓ Not a shared pot">
         Unlike ShPP, SNCP is <strong>not shared between parents</strong>. Each qualifying parent
         has their own independent entitlement of up to 12 weeks. If both parents qualify, each
-        can claim up to 12 weeks separately — potentially 24 weeks of SNCP in total across the
+        can claim up to 12 weeks separately, potentially 24 weeks of SNCP in total across the
         family.
       </Notice>
 
       {/* ── 5. Worked Calculation ────────────────────── */}
-      <h2>5. Worked Calculation — Sarah Thompson</h2>
+      <h2>5. Worked Calculation: Sarah Thompson</h2>
 
       <div className="persona-box">
-        <div className="persona-box__name">Sarah Thompson — baby admitted to NICU for 4 weeks</div>
+        <div className="persona-box__name">Sarah Thompson, baby admitted to NICU for 4 weeks</div>
         <p>AWE: <strong>£1,153.85/week</strong> · Flat rate applies: <strong>£194.32/week</strong></p>
         <p>
           Sarah's baby is born and immediately admitted to the neonatal unit. The baby receives
           28 days (4 weeks) of qualifying neonatal care. Sarah is <em>simultaneously</em>{' '}
-          receiving SMP — SNCP runs in addition to this.
+          receiving SMP; SNCP runs in addition to this.
         </p>
       </div>
 
@@ -162,7 +162,7 @@ export function SNCP({ onNavigate }: PageProps) {
             <td>Flat rate applies</td>
           </tr>
           <tr>
-            <td>SNCP — 4 weeks</td>
+            <td>SNCP: 4 weeks</td>
             <td>4 × £194.32</td>
             <td>£777.28</td>
           </tr>
@@ -181,15 +181,7 @@ export function SNCP({ onNavigate }: PageProps) {
         is <strong>£194.32 + £194.32 = £388.64/week</strong>.
       </Notice>
 
-      {/* ── Employer Reclaim ─────────────────────────── */}
-      <h2>Employer Reclaim</h2>
-      <DataTable
-        headers={['Employer', 'Prior Year NIC Liability', 'Reclaim', "Sarah's Example (4 wks)"]}
-        rows={[
-          ['Large employer', '> £45,000/year', <strong>92%</strong>, '£715.10'],
-          ['Small Employer (SER)', '≤ £45,000/year', <strong>103%</strong>, '£800.60'],
-        ]}
-      />
+
       <NextPageLink to="ssp" onNavigate={onNavigate} />
     </>
   );

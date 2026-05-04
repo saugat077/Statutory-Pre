@@ -45,7 +45,7 @@ export function Overview({ onNavigate }: PageProps) {
         <RateCard
           label="Standard Weekly Rate"
           value={<>£194.32<span className="rate-card__unit">/wk</span></>}
-          sub="SMP, SPP, SAP, ShPP, SPBP, SNCP — all at this rate"
+          sub="SMP, SPP, SAP, ShPP, SPBP, SNCP, all at this rate"
           accent="#d53880"
         />
         <RateCard
@@ -74,14 +74,14 @@ export function Overview({ onNavigate }: PageProps) {
       <h2>Employer Reclaim Rates</h2>
       <p>
         Employers pay statutory family leave pay upfront, then reclaim from HMRC via their
-        payroll software (RTI submission). SSP is the exception — it cannot be reclaimed.
+        payroll software (RTI submission). SSP is the exception; it cannot be reclaimed.
       </p>
       <DataTable
         headers={['Employer Type', 'Prior Year NIC Liability', 'Reclaim Rate', 'Applies To']}
         rows={[
           [<strong>Standard employer</strong>, '> £45,000', <strong>92%</strong>, 'SMP, SPP, SAP, ShPP, SPBP, SNCP'],
           [<strong>Small Employer (SER)</strong>, '≤ £45,000', <strong>103%</strong>, 'SMP, SPP, SAP, ShPP, SPBP, SNCP'],
-          [<strong>Any employer — SSP</strong>, '—', <strong>Not reclaimable</strong>, 'Employer bears full cost'],
+          [<strong>Any employer (SSP)</strong>, '—', <strong>Not reclaimable</strong>, 'Employer bears full cost'],
         ]}
       />
       <NextPageLink to="smp" onNavigate={onNavigate} />

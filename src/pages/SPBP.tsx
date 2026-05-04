@@ -9,7 +9,7 @@ export function SPBP({ onNavigate }: PageProps) {
         Statutory Parental Bereavement Pay
       </div>
       <div className="page-subtitle">
-        Parental Bereavement (Leave and Pay) Act 2018 ("Jack's Law") — in force April 2020
+        Parental Bereavement (Leave and Pay) Act 2018 ("Jack's Law"), in force April 2020
       </div>
 
       <Notice variant="ok">
@@ -71,7 +71,7 @@ export function SPBP({ onNavigate }: PageProps) {
         headers={['Term', 'What It Means']}
         rows={[
           [<strong>Bereaved Parent</strong>,      'A biological parent, adoptive parent, intended parent in a surrogacy arrangement, or any person who was in a parental role with the child (for example a step-parent living with the child).'],
-          [<strong>Child Death</strong>,          'Applies to any child under the age of 18 at the time of death. There is no minimum age — a newborn counts from birth.'],
+          [<strong>Child Death</strong>,          'Applies to any child under the age of 18 at the time of death. There is no minimum age; a newborn counts from birth.'],
           [<strong>Stillbirth Threshold</strong>, 'A baby born dead at or after 24 completed weeks of pregnancy. Before 24 weeks it is legally classified as a miscarriage; SPBP does not apply.'],
           [<strong>The 56-Week Window</strong>,   "SPBP can be taken at any point within 56 weeks of the date of the child's death or stillbirth, giving parents flexibility to take leave when they need it most, not just immediately after the death."],
           [<strong>Date of Death</strong>,        'The anchor point for all SPBP calculations. It replaces the function that the Qualifying Week (QW) serves in SMP and SPP.'],
@@ -102,7 +102,7 @@ export function SPBP({ onNavigate }: PageProps) {
         That date replaces the function of QW but is never called a QW in SPBP legislation.
       </p>
 
-      <Notice variant="warn" title="⚠ Common student mistake — do not apply QW to SPBP">
+      <Notice variant="warn" title="⚠ Common student mistake: do not apply QW to SPBP">
         QW is pregnancy-specific terminology used only in SMP and SPP. SPBP has no QW, no EWC,
         and no qualifying week of any kind. The anchor point is simply the date of the child's
         death.
@@ -138,7 +138,7 @@ export function SPBP({ onNavigate }: PageProps) {
           ['Flexibility',   'Option A: both weeks together as one continuous block. Option B: two separate one-week blocks taken at different times within the 56-week window'],
           ['Rate',          'Lower of £194.32/week OR 90% of AWE'],
           ['Window',        'Can be taken at any time within 56 weeks of the child\'s death or stillbirth'],
-          ['Per child',     'Each child death triggers a separate independent 2-week entitlement — if a parent tragically loses more than one child, each death is counted separately'],
+          ['Per child',     'Each child death triggers a separate independent 2-week entitlement; if a parent tragically loses more than one child, each death is counted separately'],
         ]}
       />
 
@@ -252,7 +252,7 @@ export function SPBP({ onNavigate }: PageProps) {
       </table>
 
       <Notice variant="info">
-        Sarah may take both weeks immediately as one block, or split them — for example one
+        Sarah may take both weeks immediately as one block, or split them, for example one
         week in July 2026 and one week in October 2026 when she feels she needs it most. Both
         options are valid within the 56-week window. The timing does not affect the rate; each
         week remains <strong>£194.32</strong>.
