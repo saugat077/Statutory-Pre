@@ -26,54 +26,9 @@ export function SPP({ onNavigate }: PageProps) {
         or within 56 days.
       </p>
 
-      {/* ── 2. Key Definitions ───────────────────────── */}
-      <h2>2. Key Definitions</h2>
-      <DataTable
-        headers={['Term', 'Full Name', 'What It Means']}
-        rows={[
-          [<strong>EWC</strong>, 'Expected Week of Childbirth', 'The week — starting on a Sunday — in which the baby is due.'],
-          [<strong>QW</strong>,  'Qualifying Week',             'The 15th week before the EWC. Continuous employment of 26 weeks must be completed by the end of this week.'],
-          [<strong>AWE</strong>, 'Average Weekly Earnings',     'The employee\'s average gross weekly pay, calculated over the 8-week Relevant Period ending with the last complete Saturday before the QW.'],
-        ]}
-      />
-      <Notice variant="info">
-        These definitions are the same as for SMP. If you have not already read the SMP section,
-        the SMP Key Definitions and Relevant Period explanations apply here too.
-      </Notice>
 
-      {/* ── 3. Qualifying Conditions ─────────────────── */}
-      <h2>3. Qualifying Conditions</h2>
-      <p>All five conditions must be met:</p>
-      <Checklist
-        items={[
-          <>Must be an <strong>employee</strong> (not a worker or self-employed)</>,
-          <>Must have been <strong>continuously employed for 26 weeks</strong> by the end of the Qualifying Week (15th week before EWC)</>,
-          <>AWE must be at or above the <strong>Lower Earnings Limit (£125/week)</strong></>,
-          <>Must have, or expect to have, <strong>responsibility for the child's upbringing</strong></>,
-          <>Must give at least <strong>28 days' notice</strong> using form <strong>SC3</strong> (or employer's own self-certificate) — or as soon as reasonably practicable if 28 days is not possible</>,
-        ]}
-      />
-
-      {/* ── 4. The Relevant Period ───────────────────── */}
-      <h2>4. The Relevant Period</h2>
-      <p>
-        The Relevant Period for SPP is the same as for SMP: the <strong>8-week window</strong>{' '}
-        ending with the last complete Saturday before the start of the Qualifying Week. AWE is
-        the total of all gross earnings paid in this 8-week window, divided by 8.
-      </p>
-
-      {/* ── 5. The Entitlement ───────────────────────── */}
-      <h2>5. The Entitlement</h2>
-      <DataTable
-        headers={['Element', 'Detail']}
-        rows={[
-          ['Duration', '1 week or 2 weeks — the employee chooses before leave starts'],
-          ['Rate', 'Lower of £194.32/week OR 90% of AWE'],
-          ['Window (birth)', 'Must be taken within 52 weeks of the date of birth'],
-          ['Window (adoption)', 'Must be taken within 52 weeks of the date of placement'],
-          ['Flexibility (from April 2024)', 'The 2 weeks can be split — taken as 2 separate one-week blocks at different times within the 52-week window'],
-        ]}
-      />
+      {/* ── 2. The Entitlement ───────────────────────── */}
+      <h2>2. The Entitlement</h2>
 
       <RateGrid>
         <RateCard
@@ -98,19 +53,19 @@ export function SPP({ onNavigate }: PageProps) {
 
       <Notice variant="info" title="ℹ Taking SPP as two separate weeks">
         Since April 2024, an employee can take the first week of paternity leave immediately
-        after the birth and the second week later — for example when the mother returns to work
+        after the birth and the second week later for example when the mother returns to work
         or when childcare arrangements change. <strong>28 days' notice</strong> is required
         before each separate block.
       </Notice>
 
-      {/* ── 6. Worked Calculation ────────────────────── */}
-      <h2>6. Worked Calculation — Sarah Thompson</h2>
+      {/* ── 3. Worked Calculation ────────────────────── */}
+      <h2>3. Worked Calculation</h2>
 
       <div className="persona-box">
-        <div className="persona-box__name">Sarah Thompson — as the claimant</div>
+        <div className="persona-box__name">Saugat KC</div>
         <p>Monthly salary: <strong>£5,000</strong> · AWE: <strong>£1,153.85/week</strong></p>
         <p>
-          90% of AWE = £1,038.46 — well above the flat rate of £194.32, so the
+          90% of AWE = £1,038.46 ;above the flat rate of £194.32, so the
           flat rate applies.
         </p>
       </div>
@@ -152,20 +107,7 @@ export function SPP({ onNavigate }: PageProps) {
         </tbody>
       </table>
 
-      <Notice variant="info" title="ℹ Employer reclaim on Sarah's SPP">
-        A standard employer reclaims <strong>92% × £388.64 = £357.55</strong>.
-        A small employer (SER) reclaims <strong>103% × £388.64 = £400.30</strong>.
-      </Notice>
 
-      {/* ── Employer Reclaim ─────────────────────────── */}
-      <h2>Employer Reclaim</h2>
-      <DataTable
-        headers={['Employer', 'Prior Year NIC Liability', 'Reclaim', "Sarah's Example"]}
-        rows={[
-          ['Large employer', '> £45,000/year', <strong>92%</strong>, '£357.55'],
-          ['Small Employer (SER)', '≤ £45,000/year', <strong>103%</strong>, '£400.30'],
-        ]}
-      />
       <NextPageLink to="sap" onNavigate={onNavigate} />
     </>
   );

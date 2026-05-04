@@ -39,7 +39,7 @@ export function Overview({ onNavigate }: PageProps) {
       <RateGrid>
         <RateCard
           label="Lower Earnings Limit (LEL)"
-          value={<>£125<span className="rate-card__unit">/wk</span></>}
+          value={<>£129<span className="rate-card__unit">/wk</span></>}
           sub="Minimum AWE to qualify for any statutory payment"
         />
         <RateCard

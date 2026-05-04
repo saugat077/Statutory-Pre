@@ -16,96 +16,135 @@ export function SAP({ onNavigate }: PageProps) {
       <h2>1. Introduction</h2>
       <p>
         SAP is paid by the employer to the employee who is the <strong>primary adopter</strong>{' '}
-        of a child — either through a UK domestic adoption or an overseas adoption. It mirrors
-        SMP almost exactly in both structure and duration: 39 weeks of statutory pay with the
-        same weekly rates.
+        of a child. 
+      </p>
+      <p>
+        SAP deliberately mirrors SMP in structure and rates.This is intentional government
+        policy to give adoptive parents the same financial protection as birth parents. Unlike
+        SMP which is restricted to the person who gave birth, SAP has{' '}
+        <strong>no gender restriction whatsoever</strong><br /> <br />
+        <p style={{ fontSize: '28px', fontWeight: 800, color: '#f47738', margin: '12px 0 0' }}>
+          "Either partner in a couple can be the primary adopter."
+        </p>
       </p>
       <p>
         In a couple adopting together, <strong>one partner claims SAP</strong> (the primary
         adopter) and the other may claim <strong>SPP</strong>. Only one person can claim SAP
-        per adoption — the choice must be made before pay begins.
+        per adoption.
       </p>
 
-      {/* ── 2. Key Definitions ───────────────────────── */}
-      <h2>2. Key Definitions</h2>
+      {/* ── 2. Key Rule — One SAP Per Placement ─────── */}
+      <h2>2. Key Rule : One SAP Per Placement</h2>
+      <p>
+        In a couple adopting together, only <strong>one person can claim SAP</strong> per
+        placement. The couple decides between themselves who is the primary adopter. This decision is entirely the couple's choice. HMRC does not prescribe which
+        partner must be primary based on gender or any other factor.
+      </p>
+      <ul>
+        <li><strong>Father = primary adopter</strong> (SAP, 39 weeks) + Mother = secondary adopter (SPP, 1–2 weeks)</li>
+        <li><strong>Mother = primary adopter</strong> (SAP, 39 weeks) + Father = secondary adopter (SPP, 1–2 weeks)</li>
+        <li><strong>Same-sex couple:</strong> either partner can be primary or secondary</li>
+        <li><strong>Single adopter:</strong> takes SAP as the only adopter,no SPP involved</li>
+      </ul>
+
+      {/* ── 3. Key Definitions ───────────────────────── */}
+      <h2>3. Key Definitions</h2>
       <DataTable
         headers={['Term', 'What It Means']}
         rows={[
-          [<strong>Matching Date</strong>,        'The date the adopter is formally matched with a child by the adoption agency (UK domestic adoption). This triggers the 26-week qualifying period check.'],
-          [<strong>Placement Date</strong>,       'The date the child is actually placed with the adopter — the earliest SAP and Adoption Leave can start.'],
-          [<strong>Official Notification</strong>,'For overseas adoptions, the date the adopter receives official confirmation that they have been matched. Replaces the Matching Date for overseas cases.'],
-          [<strong>AWE</strong>,                  'Average Weekly Earnings — calculated over the 8 weeks ending with the week of the Matching Date (or Official Notification for overseas).'],
+          [<strong>Matching Date</strong>,         'The date the adoption agency formally matches the child to the adopter. This is the reference point for calculating the Relevant Period and qualifying conditions.'],
+          [<strong>Placement Date</strong>,        'The date the child is physically placed into the adopter\'s home. SAP can start from this date or up to 14 days before the expected Placement Date.'],
+          [<strong>Official Notification</strong>, 'For overseas adoptions, the date the adopter receives official confirmation (approval from the relevant UK authority to adopt from abroad). This replaces the Matching Date as the reference point.'],
+          [<strong>AWE</strong>,                   'Average Weekly Earnings — calculated over the 8 weeks ending with the week of the Matching Date (or Official Notification for overseas adoptions).'],
+          [<strong>Primary Adopter</strong>,       'The person in a couple who is designated to claim SAP. Only one person per placement can claim SAP. Either partner can take this role — HMRC does not restrict by gender.'],
+          [<strong>Secondary Adopter</strong>,     'The other person in a couple — they claim SPP (1–2 weeks) instead of SAP. May extend this through ShPP if the primary adopter curtails SAP early.'],
         ]}
       />
 
-      {/* ── 3. Qualifying Conditions ─────────────────── */}
-      <h2>3. Qualifying Conditions</h2>
-      <p>All five conditions must be met:</p>
-      <Checklist
-        items={[
-          <>Must be an <strong>employee</strong> (not a worker or self-employed)</>,
-          <>Must have been <strong>continuously employed for 26 weeks</strong> ending with the week in which they are notified of the match</>,
-          <>AWE must be at or above the <strong>Lower Earnings Limit (£125/week)</strong></>,
-          <>Must give the employer <strong>28 days' notice</strong> of the intended adoption leave start date</>,
-          <>Must provide the employer with a <strong>matching certificate</strong> from the adoption agency (or equivalent official documentation for overseas adoptions)</>,
+      {/* ── 4. The Entitlement ───────────────────────── */}
+      <h2>4. The Entitlement</h2>
+      <DataTable
+        headers={['Period', 'Rate']}
+        rows={[
+          [<strong>Weeks 1 – 6</strong>,   '90% of AWE'],
+          [<strong>Weeks 7 – 39</strong>,  '£194.32/wk or 90% AWE (whichever is lower)'],
+          [<strong>Weeks 40 – 52</strong>, 'Unpaid'],
         ]}
       />
 
-      {/* ── 4. The Relevant Period ───────────────────── */}
-      <h2>4. The Relevant Period</h2>
+      {/* ── 7. Why SAP Exists Separately from SMP ───── */}
+      <h2>7. Why SAP Exists Separately from SMP</h2>
       <p>
-        For SAP the Relevant Period is the <strong>8-week window ending with the week in which
-        the adopter is notified of the match</strong>. AWE is the total gross earnings paid in
-        this period divided by 8.
+        SMP requires a pregnancy.It uses EWC, QW, and a MATB1 certificate. Adoptive parents
+        have none of these. SAP uses entirely different reference points:
       </p>
-      <Notice variant="info" title="ℹ Difference from SMP">
-        For SMP the Relevant Period ends at the Qualifying Week (15th week before the EWC).
-        For SAP it ends at the week of the <em>matching notification</em> — because there is
-        no equivalent of a fixed "due date" in adoption.
+      <DataTable
+        headers={['Framework Point', 'SMP', 'SAP']}
+        rows={[
+          ['Reference event',  'Expected Week of Childbirth (EWC)', 'Matching Date'],
+          ['Qualifying week',  '15th week before the EWC',          'Week of matching notification'],
+          ['Evidence required','MATB1 certificate from GP/midwife', 'Matching certificate from adoption agency'],
+          ['Who can claim',    'Person who gave birth only',        'Either partner — no gender restriction'],
+        ]}
+      />
+
+      {/* ── 8. Common Questions ──────────────────────── */}
+      <h2>8. Common Questions</h2>
+
+      <h3>If SAP and SMP produce the same amounts, why have both?</h3>
+      <p>
+        Because the trigger events and qualifying frameworks are completely different. SMP is
+        triggered by giving birth; the evidence is a MATB1 certificate and the reference point is
+        the EWC. SAP is triggered by an adoption placement; the evidence is the matching certificate
+        and the reference point is the Matching Date. A mother who gives birth cannot claim SAP.
+        An adoptive parent cannot claim SMP. The amounts look the same because Parliament
+        deliberately gave adoptive parents equal financial protection, not because they are the
+        same payment.
+      </p>
+
+      <h3>Can the father take SAP and the mother take SPP?</h3>
+      <p>
+        Yes, completely valid. SAP has no gender restriction. If the father is designated as
+        the primary adopter, he takes SAP (39 weeks). The mother as secondary adopter takes
+        SPP (1–2 weeks). HMRC does not care about gender, only about who is designated
+        primary adopter.
+      </p>
+
+      <h3>Can the mother get more than just 1–2 weeks as secondary adopter?</h3>
+      <p>
+        Yes, through <strong>ShPP</strong>. If the primary adopter curtails SAP early, the
+        remaining weeks convert into a shared ShPP pot that both parents can draw from.
+        For example:
+      </p>
+      <ul>
+        <li>Father takes 10 weeks SAP then curtails</li>
+        <li>Remaining 29 weeks of pay become ShPP</li>
+        <li>Mother takes 20 weeks ShPP at £194.32/week = <strong>£3,886.40</strong></li>
+        <li>Father takes remaining 9 weeks ShPP at £194.32/week = <strong>£1,748.88</strong></li>
+      </ul>
+      <p>
+        This gives the mother far more than the 1–2 weeks she would have received under SPP alone.
+      </p>
+
+      <Notice variant="warn" title="⚠ What the secondary adopter cannot do">
+        The secondary adopter cannot claim SAP (only one SAP per placement), cannot claim SMP
+        (no pregnancy), and cannot claim a second SAP for the same placement. Their only routes
+        to additional paid leave beyond SPP are through ShPP if the primary adopter curtails SAP.
       </Notice>
 
-      {/* ── 5. The Entitlement ───────────────────────── */}
-      <h2>5. The Entitlement</h2>
-      <DataTable
-        headers={['Period', 'Rate', 'Key Rule']}
-        highlightRows={[0, 1]}
-        rows={[
-          [<strong>Weeks 1 – 6</strong>,   <><strong>90% of AWE</strong></>,                                       'No cap — always 90% regardless of earnings level'],
-          [<strong>Weeks 7 – 39</strong>,  <><strong>£194.32/wk</strong> or 90% AWE (whichever is lower)</>,       'Flat rate applies to most employees'],
-          [<strong>Weeks 40 – 52</strong>, 'Unpaid',                                                                'Additional Adoption Leave — employer may offer enhanced pay'],
-        ]}
-      />
-
-      <RateGrid>
-        <RateCard
-          label="Weeks 1–6"
-          value="90% AWE"
-          sub="No upper cap — based on actual earnings"
-          accent="#f47738"
-        />
-        <RateCard
-          label="Weeks 7–39 (flat rate)"
-          value={<>£194.32<span className="rate-card__unit">/wk</span></>}
-          sub="Or 90% AWE if that is lower — 33 weeks at this rate"
-          accent="#f47738"
-        />
-        <RateCard
-          label="Total paid period"
-          value="39 weeks"
-          sub="Mirrors SMP exactly in structure and amount"
-          accent="#f47738"
-        />
-      </RateGrid>
-
-      {/* ── 6. Worked Calculation ────────────────────── */}
-      <h2>6. Worked Calculation — Sarah Thompson</h2>
+      {/* ── 9. Worked Calculation ────────────────────── */}
+      <h2>9. Worked Calculation — Sarah Thompson (Primary Adopter)</h2>
 
       <div className="persona-box">
         <div className="persona-box__name">Sarah Thompson — primary adopter</div>
-        <p>Monthly salary: <strong>£5,000</strong> · AWE: <strong>£1,153.85/week</strong></p>
+        <p>Monthly salary: <strong>£5,000</strong> · Continuously employed: <strong>3 years</strong></p>
+        <p>Matching Date: <strong>1 June 2026</strong> · Placement Date: <strong>15 June 2026</strong></p>
+        <p>
+          AWE = £5,000 × 12 ÷ 52 = <strong>£1,153.85/week</strong>, above LEL (£125/week) ✓
+        </p>
         <p>
           Since 90% of Sarah's AWE (£1,038.46) is above the flat rate (£194.32), the flat
-          rate applies from week 7 onwards — identical to her SMP calculation.
+          rate applies from week 7 onwards, identical to her SMP calculation.
         </p>
       </div>
 
@@ -122,6 +161,11 @@ export function SAP({ onNavigate }: PageProps) {
             <td>AWE</td>
             <td>£5,000 × 12 ÷ 52</td>
             <td>£1,153.85/week</td>
+          </tr>
+          <tr>
+            <td>LEL check</td>
+            <td>£1,153.85 &gt; £125/week</td>
+            <td>Qualifies ✓</td>
           </tr>
           <tr>
             <td>Weeks 1–6 rate</td>
@@ -151,21 +195,18 @@ export function SAP({ onNavigate }: PageProps) {
         </tbody>
       </table>
 
+      <p>
+        Sarah's partner (secondary adopter) separately claims SPP:{' '}
+        <strong>2 weeks × £194.32 = £388.64</strong>
+      </p>
+
+
       <Notice variant="info" title="ℹ Identical to SMP — by design">
         SAP and SMP use the same rates and the same 39-week structure. For the same employee
         the total SAP figure will always equal the total SMP figure. The legislative intention
         is to give adoptive parents the same level of income support as birth parents.
       </Notice>
 
-      {/* ── Employer Reclaim ─────────────────────────── */}
-      <h2>Employer Reclaim</h2>
-      <DataTable
-        headers={['Employer', 'Prior Year NIC Liability', 'Reclaim', "Sarah's Example"]}
-        rows={[
-          ['Large employer', '> £45,000/year', <strong>92%</strong>, '£11,631.85'],
-          ['Small Employer (SER)', '≤ £45,000/year', <strong>103%</strong>, '£13,022.62'],
-        ]}
-      />
       <NextPageLink to="shpp" onNavigate={onNavigate} />
     </>
   );

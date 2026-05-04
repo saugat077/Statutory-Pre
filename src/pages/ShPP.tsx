@@ -4,7 +4,7 @@ import { Notice, RateCard, RateGrid, DataTable, Checklist, Tag, NextPageLink } f
 const flowSteps = [
   {
     title: 'Mother / adopter is receiving SMP or SAP',
-    desc:  'Up to 39 weeks of statutory pay is available. The 2 compulsory maternity weeks cannot be shared — the shareable maximum is therefore 37 weeks of pay and 50 weeks of leave.',
+    desc:  'Up to 39 weeks of statutory pay is available. The 2 compulsory maternity weeks cannot be shared; the shareable maximum is therefore 37 weeks of pay and 50 weeks of leave.',
   },
   {
     title: 'Curtailment Notice submitted',
@@ -12,7 +12,7 @@ const flowSteps = [
   },
   {
     title: 'ShPP pot is created',
-    desc:  'The remaining weeks of pay become available as Statutory Shared Parental Pay, shared between both parents. Each parent draws from the same pot — the total across both cannot exceed 37 weeks.',
+    desc:  'The remaining weeks of pay become available as Statutory Shared Parental Pay, shared between both parents. Each parent draws from the same pot; the total across both cannot exceed 37 weeks.',
   },
   {
     title: 'Both parents submit opt-in notices',
@@ -20,7 +20,7 @@ const flowSteps = [
   },
   {
     title: 'Parents take ShPP in agreed blocks',
-    desc:  'Leave can be taken in up to 3 separate blocks each. Blocks can be consecutive, alternating, or simultaneous — both parents drawing ShPP from their own employer at the same time.',
+    desc:  'Leave can be taken in up to 3 separate blocks each. Blocks can be consecutive, alternating, or simultaneous, with both parents drawing ShPP from their own employer at the same time.',
   },
 ];
 
@@ -41,7 +41,7 @@ export function ShPP({ onNavigate }: PageProps) {
           ShPP is the most complex statutory payment. The critical concept is:{' '}
           <strong>SMP or SAP must be curtailed first before ShPP can exist.</strong>{' '}
           Think of it as "converting" maternity or adoption pay into a shared pot that
-          both parents can draw from. Nothing happens automatically — both parents must
+          both parents can draw from. Nothing happens automatically; both parents must
           actively opt in.
         </p>
       </div>
@@ -55,9 +55,9 @@ export function ShPP({ onNavigate }: PageProps) {
         who takes leave and when, rather than leave being locked to one parent.
       </p>
       <p>
-        It is the most <strong>flexible</strong> — and most <strong>complex</strong> — of all
-        the statutory payments. Both parents must meet their own eligibility tests independently,
-        and the process requires multiple formal notices to be submitted in the correct order.
+        - Total of <strong>50 weeks</strong> Shared Parental Leave available. <br />
+        - <strong>37 weeks</strong> are paid. <br />
+        - The remaining <strong>13 weeks</strong> are unpaid. <br />
       </p>
 
       {/* ── 2. Key Definitions ───────────────────────── */}
@@ -70,50 +70,6 @@ export function ShPP({ onNavigate }: PageProps) {
           [<strong>Opt-In Notice</strong>,        "A notice each parent submits to their own employer, setting out how much ShPP they intend to take and on what dates. Both parents must do this independently."],
           [<strong>SPLIT Days</strong>,           'Shared Parental Leave In Touch days — up to 20 days each parent can work during ShPP without losing that week\'s payment. Like KIT days for SMP but 20 instead of 10.'],
           [<strong>Discontinuous Blocks</strong>, 'Requesting ShPP leave in separate, non-consecutive periods — e.g. 4 weeks on, 2 weeks back at work, 4 weeks on. Employers can refuse discontinuous requests (but not continuous ones).'],
-        ]}
-      />
-
-      {/* ── 3. How ShPP is Created ───────────────────── */}
-      <h2>3. How ShPP is Created — The Curtailment Process</h2>
-      <div className="flow">
-        {flowSteps.map((step, i) => (
-          <div key={i} className="flow-step">
-            <div className="flow-step__track">
-              <div className="flow-step__dot">{i + 1}</div>
-              {i < flowSteps.length - 1 && <div className="flow-step__line" />}
-            </div>
-            <div className="flow-step__body">
-              <div className="flow-step__title">{step.title}</div>
-              <div className="flow-step__desc">{step.desc}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* ── 4. Qualifying Conditions ─────────────────── */}
-      <h2>4. Qualifying Conditions — Both Parents</h2>
-      <p>
-        Both parents must meet <strong>their own separate</strong> eligibility tests.
-        Meeting one test does not satisfy the other.
-      </p>
-
-      <h3>Mother / Primary Adopter</h3>
-      <Checklist
-        items={[
-          'Employee (not a worker or self-employed)',
-          '26 weeks\' continuous employment by the end of the Qualifying Week',
-          'AWE at or above the LEL (£125/week)',
-          'Has curtailed, or given notice to curtail, their SMP or SAP',
-        ]}
-      />
-
-      <h3>Partner</h3>
-      <Checklist
-        items={[
-          'Employed or self-employed (broader than other statutory payments)',
-          <>Worked for at least <strong>26 of the 66 weeks</strong> before the EWC or placement date</>,
-          <>Earned at least <strong>£30/week average</strong> in 13 of those 66 weeks</>,
-          'Has, or expects to have, responsibility for the child\'s upbringing',
         ]}
       />
 
@@ -159,7 +115,7 @@ export function ShPP({ onNavigate }: PageProps) {
       </RateGrid>
 
       {/* ── 6. Worked Calculation ────────────────────── */}
-      <h2>6. Worked Calculation — Sarah Thompson</h2>
+      <h2>6. Worked Calculation</h2>
 
       <div className="persona-box">
         <div className="persona-box__name">Sarah Thompson — curtails SMP after 10 weeks</div>
@@ -233,22 +189,7 @@ export function ShPP({ onNavigate }: PageProps) {
           ['Weeks 13–14', 'Working',              'ShPP (final 2 weeks)'],
         ]}
       />
-      <Notice variant="warn" title="⚠ Employers can refuse discontinuous requests">
-        An employer <strong>cannot refuse</strong> a request for continuous ShPP leave.
-        However, they <strong>can refuse</strong> a discontinuous request (separate blocks).
-        If refused, the employee must either accept a single continuous block starting on
-        the same date, or withdraw the request entirely.
-      </Notice>
 
-      {/* ── Employer Reclaim ─────────────────────────── */}
-      <h2>Employer Reclaim</h2>
-      <DataTable
-        headers={['Employer', 'Prior Year NIC Liability', 'Reclaim']}
-        rows={[
-          ['Large employer', '> £45,000/year', <strong>92% of ShPP paid to their own employee</strong>],
-          ['Small Employer (SER)', '≤ £45,000/year', <strong>103% of ShPP paid to their own employee</strong>],
-        ]}
-      />
       <NextPageLink to="spbp" onNavigate={onNavigate} />
     </>
   );
