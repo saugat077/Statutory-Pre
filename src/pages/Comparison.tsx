@@ -36,7 +36,7 @@ export function Comparison({ onNavigate }: PageProps) {
               <td><Tag code="SMP" color="#d53880" /><br /><span style={{ fontSize: '12px' }}>Statutory Maternity Pay</span></td>
               <td>Pregnancy / childbirth</td>
               <td>26 weeks' service by the end of the <strong>Qualifying Week</strong> (15th week before EWC)</td>
-              <td>LEL: £125/week</td>
+              <td>LEL: £129/week</td>
               <td>39 weeks</td>
               <td>Wks 1–6: <strong>90% AWE</strong> (no cap)<br />Wks 7–39: <strong>£194.32/wk</strong></td>
               <td style={{ textAlign: 'center' }}>No</td>
@@ -46,7 +46,7 @@ export function Comparison({ onNavigate }: PageProps) {
               <td><Tag code="SPP" color="#1d70b8" /><br /><span style={{ fontSize: '12px' }}>Statutory Paternity Pay</span></td>
               <td>Birth or adoption of partner's / joint child</td>
               <td>26 weeks' service by the end of the Qualifying Week</td>
-              <td>LEL: £125/week</td>
+              <td>LEL: £129/week</td>
               <td>1–2 weeks (split into separate blocks from April 2024)</td>
               <td><strong>£194.32/wk</strong> or 90% AWE (lower)</td>
               <td style={{ textAlign: 'center' }}>No</td>
@@ -56,7 +56,7 @@ export function Comparison({ onNavigate }: PageProps) {
               <td><Tag code="SAP" color="#f47738" /><br /><span style={{ fontSize: '12px' }}>Statutory Adoption Pay</span></td>
               <td>Adoption match (Matching Date)</td>
               <td>26 weeks' service by the end of the <strong>week of the Matching Date</strong></td>
-              <td>LEL: £125/week</td>
+              <td>LEL: £129/week</td>
               <td>39 weeks</td>
               <td>Wk 1: <strong>90% AWE</strong><br />Wks 2–39: <strong>£194.32/wk</strong></td>
               <td style={{ textAlign: 'center' }}>No</td>
@@ -66,7 +66,7 @@ export function Comparison({ onNavigate }: PageProps) {
               <td><Tag code="ShPP" color="#4c2c92" /><br /><span style={{ fontSize: '12px' }}>Statutory Shared Parental Pay</span></td>
               <td>Curtailment of SMP or SAP by the mother / primary adopter</td>
               <td>26 weeks' service (both parents meet their own separate tests)</td>
-              <td>LEL: £125/week</td>
+              <td>LEL: £129/week</td>
               <td>Up to 37 weeks <em>shared</em> between both parents</td>
               <td><strong>£194.32/wk</strong> or 90% AWE (lower), assessed per parent</td>
               <td style={{ textAlign: 'center' }}>No</td>
@@ -76,7 +76,7 @@ export function Comparison({ onNavigate }: PageProps) {
               <td><Tag code="SPBP" color="#28a197" /><br /><span style={{ fontSize: '12px' }}>Statutory Parental Bereavement Pay</span></td>
               <td>Death of a child under 18, or stillbirth at 24+ completed weeks of pregnancy</td>
               <td>26 weeks' service <strong>at the date of death</strong> or stillbirth</td>
-              <td>LEL: £125/week</td>
+              <td>LEL: £129/week</td>
               <td>2 weeks (split into 2 separate blocks within 56 weeks)</td>
               <td><strong>£194.32/wk</strong> or 90% AWE (lower)</td>
               <td style={{ textAlign: 'center', color: 'var(--green)', fontWeight: 700 }}>Yes<br /><span style={{ fontSize: '11px', fontWeight: 400 }}>from date of bereavement</span></td>
@@ -86,7 +86,7 @@ export function Comparison({ onNavigate }: PageProps) {
               <td><Tag code="SNCP" color="#d4351c" /><br /><span style={{ fontSize: '12px' }}>Statutory Neonatal Care Pay</span></td>
               <td>Baby receives 7+ consecutive days' neonatal care (admitted aged ≤28 days)</td>
               <td>26 weeks' service by the week of the baby's birth</td>
-              <td>LEL: £125/week</td>
+              <td>LEL: £129/week</td>
               <td>Up to 12 weeks <em>per parent</em>, not shared</td>
               <td><strong>£194.32/wk</strong> or 90% AWE (lower)</td>
               <td style={{ textAlign: 'center' }}>No</td>
@@ -163,7 +163,7 @@ export function Comparison({ onNavigate }: PageProps) {
         rows={[
           ['SMP / SPP / SAP / ShPP / SPBP / SNCP (flat rate)', '£172.48/wk', '£184.03/wk', '£187.18/wk', <strong style={{ color: 'var(--green)' }}>£194.32/wk</strong>],
           ['SSP (weekly rate)',                                  '£109.40/wk', '£116.75/wk', '£116.75/wk', <strong style={{ color: 'var(--green)' }}>£123.25/wk</strong>],
-          ['Lower Earnings Limit (LEL)',                         '£123/wk',    '£123/wk',    '£125/wk',    <strong style={{ color: 'var(--green)' }}>£125/wk (removed for SSP)</strong>],
+          ['Lower Earnings Limit (LEL)',                         '£123/wk',    '£123/wk',    '£125/wk',    <strong style={{ color: 'var(--green)' }}>£129/wk (removed for SSP)</strong>],
           ['Small Employer Relief (SER) threshold',              '£45,000',    '£45,000',    '£45,000',    '£45,000'],
           ['Employer reclaim: standard',                        '92%',        '92%',        '92%',        '92%'],
           ['Employer reclaim: SER',                             '103%',       '103%',       '103%',       '103%'],

@@ -35,7 +35,7 @@ export function SMP({ onNavigate }: PageProps) {
           [<strong>QW</strong>,     'Qualifying Week',             'The 15th week before the EWC. This is the critical date: the employee must have been continuously employed for 26 weeks by the end of this week.'],
           [<strong>AWE</strong>,    'Average Weekly Earnings',     "The employee's average gross weekly pay, calculated over the 8-week Relevant Period ending with the last complete Saturday before the QW."],
           [<strong>RP</strong>,     'Relevant Period',             'The 8-week window used to calculate AWE, ending with the last complete Saturday before the QW.'],
-          [<strong>LEL</strong>,    'Lower Earnings Limit',        "£125/week for 2026/27. The employee's AWE must be at or above this figure to qualify."],
+          [<strong>LEL</strong>,    'Lower Earnings Limit',        "£129/week for 2026/27. The employee's AWE must be at or above this figure to qualify."],
           [<strong>MAT B1</strong>, 'Maternity Certificate',       'A certificate issued by a GP or midwife, available from 20 weeks before the EDD, confirming the EWC. Employers may request this as evidence.'],
         ]}
       />
@@ -46,7 +46,7 @@ export function SMP({ onNavigate }: PageProps) {
         items={[
           'Must be an employee (not a worker or self-employed person)',
           <>At least <strong>26 weeks' continuous employment</strong> by the end of the Qualifying Week</>,
-          <>AWE at or above the <strong>Lower Earnings Limit (£125/week)</strong> for 2026/27</>,
+          <>AWE at or above the <strong>Lower Earnings Limit (£129/week)</strong> for 2026/27</>,
           <>Still pregnant at the <strong>11th week before EWC</strong>, or has already given birth</>,
           <>Must give the employer at least <strong>28 days' notice</strong> of the intended start date for SMP</>,
           <>Must provide a <strong>MATB1 certificate</strong>, obtainable from a GP or midwife from 20 weeks before the due date</>,

@@ -80,7 +80,7 @@ export function Overview({ onNavigate }: PageProps) {
         headers={['Employer Type', 'Prior Year NIC Liability', 'Reclaim Rate', 'Applies To']}
         rows={[
           [<strong>Standard employer</strong>, '> £45,000', <strong>92%</strong>, 'SMP, SPP, SAP, ShPP, SPBP, SNCP'],
-          [<strong>Small Employer (SER)</strong>, '≤ £45,000', <strong>103%</strong>, 'SMP, SPP, SAP, ShPP, SPBP, SNCP'],
+          [<strong>Small Employer (SER)</strong>, '≤ £45,000', <strong>109%</strong>, 'SMP, SPP, SAP, ShPP, SPBP, SNCP'],
           [<strong>Any employer (SSP)</strong>, '—', <strong>Not reclaimable</strong>, 'Employer bears full cost'],
         ]}
       />

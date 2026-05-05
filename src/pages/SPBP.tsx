@@ -225,7 +225,7 @@ export function SPBP({ onNavigate }: PageProps) {
           </tr>
           <tr>
             <td>LEL check</td>
-            <td>£1,153.85 &gt; £125/week</td>
+            <td>£1,153.85 &gt; £129/week</td>
             <td>Qualifies ✓</td>
           </tr>
           <tr>

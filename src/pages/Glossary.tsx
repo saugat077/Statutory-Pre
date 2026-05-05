@@ -47,7 +47,7 @@ const terms: { term: string; definition: string }[] = [
   },
   {
     term: 'LEL — Lower Earnings Limit',
-    definition: 'The minimum average weekly pay an employee must earn to qualify for family-related statutory payments (SMP, SPP, SAP, ShPP, SPBP, SNCP). Set at £125/week for 2026/27. Important exception: from 6 April 2026, the LEL was removed as an SSP qualifying condition; all employees can now receive SSP regardless of how much they earn.',
+    definition: 'The minimum average weekly pay an employee must earn to qualify for family-related statutory payments (SMP, SPP, SAP, ShPP, SPBP, SNCP). Set at £129/week for 2026/27. Important exception: from 6 April 2026, the LEL was removed as an SSP qualifying condition; all employees can now receive SSP regardless of how much they earn.',
   },
   {
     term: 'MATB1 — Maternity Certificate',

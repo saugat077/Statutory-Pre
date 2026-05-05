@@ -140,7 +140,7 @@ export function SAP({ onNavigate }: PageProps) {
         <p>Monthly salary: <strong>£5,000</strong> · Continuously employed: <strong>3 years</strong></p>
         <p>Matching Date: <strong>1 June 2026</strong> · Placement Date: <strong>15 June 2026</strong></p>
         <p>
-          AWE = £5,000 × 12 ÷ 52 = <strong>£1,153.85/week</strong>, above LEL (£125/week) ✓
+          AWE = £5,000 × 12 ÷ 52 = <strong>£1,153.85/week</strong>, above LEL (£129/week) ✓
         </p>
         <p>
           Since 90% of Sarah's AWE (£1,038.46) is above the flat rate (£194.32), the flat
@@ -164,7 +164,7 @@ export function SAP({ onNavigate }: PageProps) {
           </tr>
           <tr>
             <td>LEL check</td>
-            <td>£1,153.85 &gt; £125/week</td>
+            <td>£1,153.85 &gt; £129/week</td>
             <td>Qualifies ✓</td>
           </tr>
           <tr>
